@@ -1,0 +1,69 @@
+# Azure Secure Network Architecture Lab
+
+## Overview
+
+This project demonstrates the design and implementation of a secure Azure network architecture using Microsoft Azure networking services. The environment simulates a production deployment by separating workloads into dedicated virtual networks and subnets while implementing layered security through Network Security Groups (NSGs), User Defined Routes (UDRs), Virtual Network Peering, and a Network Virtual Appliance (NVA).
+The objective of this project was to gain hands-on experience with Azure networking, traffic routing, and cloud security concepts commonly used in enterprise environments.
+
+## Technologies Used
+
+- Microsoft Azure
+- Azure Virtual Networks (VNets)
+- Azure Subnets
+- Azure Virtual Machines
+- Network Security Groups (NSGs)
+- User Defined Routes (UDRs)
+- Network Virtual Appliance (NVA)
+- Virtual Network Peering
+- Azure Portal
+
+---
+
+## Architecture
+
+The lab environment consists of:
+
+- **Production VNet**
+  - Web Subnet
+  - Application Subnet
+  - Management Subnet
+
+- **Security VNet**
+  - NVA Subnet
+
+- VNet Peering between the Production and Security VNets
+- Custom routing to inspect traffic through the NVA
+- NSGs securing communication between network segments
+
+---
+
+##  Features Implemented
+
+- Created multiple Azure Virtual Networks and subnets
+- Configured Network Security Groups with custom inbound and outbound rules
+- Deployed an Azure Virtual Machine as a Network Virtual Appliance (NVA)
+- Enabled IP forwarding on the NVA
+- Created User Defined Routes (UDRs) to redirect application subnet traffic through the NVA
+- Configured Virtual Network Peering between the Production and Security VNets
+- Enabled forwarded traffic and gateway transit for VNet peering
+- Validated secure communication between network resources
+
+---
+
+## Skills Demonstrated
+
+- Azure Virtual Networking
+- Cloud Network Security
+- Network Segmentation
+- Traffic Routing
+- Network Security Groups (NSGs)
+- User Defined Routes (UDRs)
+- Virtual Network Peering
+- Azure Infrastructure Design
+- Enterprise Network Architecture
+
+---
+
+## Learning Outcomes
+
+Through this project, I gained practical experience in designing secure Azure network environments, implementing layered network security, controlling traffic flow using custom routing, and applying Azure networking best practices used in enterprise cloud environments.
